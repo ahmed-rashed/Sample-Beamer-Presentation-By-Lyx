@@ -108,7 +108,7 @@ multicol
 \quotes_language english
 \papercolumns 1
 \papersides 2
-\paperpagestyle default
+\paperpagestyle empty
 \listings_params "breaklines=true,commentstyle={\color[rgb]{0,0.5,0}},keywordstyle={\color{blue}},stringstyle={\color{magenta}},tabsize=4,basicstyle={\ttfamily},columns=fullflexible"
 \tracking_changes false
 \output_changes false
@@ -442,7 +442,7 @@ setbeamertemplate{subsection in toc}[square]
 
 \begin_layout Standard
 \begin_inset Flex ArticleMode
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -513,7 +513,7 @@ Technical Writing and Presentation
 \end_layout
 
 \begin_layout Author
-Ahmed Desoki
+Ahmed Rashed
 \end_layout
 
 \begin_layout Institute
@@ -521,13 +521,13 @@ Aerospace Engineering Department
 \begin_inset Newline newline
 \end_inset
 
-Cairo University
+Faculty of Engineering, Cairo University
 \end_layout
 
 \begin_layout TitleGraphic
 \noindent
 \begin_inset Graphics
-	filename AerospaceDeptLogo.jpg
+	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/AerospaceDeptLogo.jpg
 	width 50text%
 
 \end_inset
@@ -560,33 +560,114 @@ today
 \begin_inset Flex ArticleMode
 status open
 
-\begin_layout Title (Plain Frame)
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/AerospaceDeptLogo.jpg
+	height 3cm
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/FE-Logo.jpg
+	height 3cm
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/CU-Logo.jpg
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing double
+\align center
+
+\series bold
+\size giant
 Technical Writing and Presentation
 \end_layout
 
-\begin_layout Subtitle
-\begin_inset Graphics
-	filename AerospaceDeptLogo.jpg
-	width 50text%
-
+\begin_layout Plain Layout
+\begin_inset VSpace vfill
 \end_inset
 
 
 \end_layout
 
-\begin_layout Author
-Ahmed Desoki
-\begin_inset Newline newline
-\end_inset
+\begin_layout Plain Layout
+\align center
 
-Aerospace Engineering Department
-\begin_inset Newline newline
-\end_inset
-
-Cairo University
+\size large
+Assistant Professor:
 \end_layout
 
-\begin_layout Date
+\begin_layout Plain Layout
+\align center
+
+\size larger
+Ahmed Mohamed Rashed Desoki
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size larger
+Aerospace Engineering Department,
+\begin_inset Newline newline
+\end_inset
+
+Faculty of Engineering, Cairo University
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size large
 \begin_inset ERT
 status open
 
@@ -600,6 +681,163 @@ today
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "CreatedBy.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Section
+Table of Contents
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+contentsname}{Table of Contents}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{
+\backslash
+contentsname}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnseprule}{1pt}
 \end_layout
 
 \end_inset
@@ -630,47 +868,7 @@ includegraphics[width=2cm]{AerospaceDeptLogo.jpg}}
 status open
 
 \begin_layout Plain Layout
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Outline
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Flex ArticleMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage clearpage
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -687,11 +885,23 @@ status open
 
 \begin_layout Plain Layout
 
-%To force breaking long URL's
+
+\backslash
+pagenumbering{arabic}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+%To force breaking long URL's
 \end_layout
 
 \begin_layout Plain Layout
@@ -767,10 +977,10 @@ Many of the individuals programmers who start an open source project usually
 
 \begin_layout Frame
 \begin_inset Argument 3
-status open
+status collapsed
 
 \begin_layout Plain Layout
-shrink
+allowframebreaks
 \end_layout
 
 \end_inset
@@ -780,7 +990,7 @@ shrink
 status open
 
 \begin_layout Plain Layout
-Some Open Source Projects
+Notable Open Source Projects
 \end_layout
 
 \end_inset
@@ -790,10 +1000,6 @@ Some Open Source Projects
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Flex Multiple Columns
-status open
-
-\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -826,6 +1032,24 @@ Application Software
 \end_layout
 
 \begin_deeper
+\begin_layout Plain Layout
+\noindent
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 7-Zip
 \end_layout
@@ -847,7 +1071,7 @@ Inkscape
 \end_layout
 
 \begin_layout Itemize
-Mozilla Firefox
+Firefox
 \end_layout
 
 \begin_layout Itemize
@@ -855,7 +1079,7 @@ Chromium
 \end_layout
 
 \begin_layout Itemize
-Mozilla Thunderbird
+Thunderbird
 \end_layout
 
 \begin_layout Itemize
@@ -863,11 +1087,20 @@ NASA World Wind
 \end_layout
 
 \begin_layout Itemize
-OpenOffice.org / LibreOffice
+OpenOffice.org
+\end_layout
+
+\begin_layout Itemize
+LibreOffice
 \end_layout
 
 \begin_layout Itemize
 PrestaShop
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -876,7 +1109,7 @@ PrestaShop
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -909,6 +1142,24 @@ Programming Languages
 \end_layout
 
 \begin_deeper
+\begin_layout Plain Layout
+\noindent
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Perl 
 \begin_inset Note Note
@@ -965,13 +1216,18 @@ general purpose programming language
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1004,6 +1260,24 @@ Operating Systems
 \end_layout
 
 \begin_deeper
+\begin_layout Plain Layout
+\noindent
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Android
 \end_layout
@@ -1028,13 +1302,34 @@ ReactOS
 Haiku
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status open
+
 \begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1067,6 +1362,24 @@ Server Software
 \end_layout
 
 \begin_deeper
+\begin_layout Plain Layout
+\noindent
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Apache
 \begin_inset Note Note
@@ -1165,12 +1478,12 @@ enterprise content management system
 
 \end_layout
 
-\end_deeper
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \end_inset
 
 
@@ -1211,7 +1524,7 @@ Useful Links
 \begin_layout Itemize
 Introduction to Open Source Software (in Arabic) (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1310,7 +1623,7 @@ http://ojuba.org/wiki/
 \begin_layout Itemize
 Open source is the backbone for Startups (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1325,7 +1638,7 @@ http://www.findbestopensource.com/article-detail/open-source-startups
 \begin_layout Itemize
 How to contribute to open source (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1339,7 +1652,7 @@ http://www.findbestopensource.com/article-detail/contribute-to-opensource
 
 \begin_layout Itemize
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1354,7 +1667,7 @@ en.opensuse.org/portal:How_to_participate
 \begin_layout Itemize
 How to learn from open source projects (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1369,7 +1682,7 @@ http://www.findbestopensource.com/article-detail/learn_from_open-source
 \begin_layout Itemize
 How to make money from Open Source (
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1388,7 +1701,7 @@ Arabic websites
 \begin_deeper
 \begin_layout Itemize
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1402,7 +1715,7 @@ http://www.linuxac.org
 
 \begin_layout Itemize
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1416,7 +1729,7 @@ http://itwadi.com
 
 \begin_layout Itemize
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1716,14 +2029,19 @@ Show example practically and show the examples and manual
 \end_layout
 
 \begin_layout AlertBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+If you find expert who is willing to answer your questions;
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-If you find expert who is willing to answer your questions
-\end_layout
-
 \begin_layout Itemize
 you are lucky
 \end_layout
@@ -2779,6 +3097,7 @@ Graphics Formats
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
@@ -3111,15 +3430,15 @@ Inkscape
 
 \begin_deeper
 \begin_layout Itemize
+Free
+\end_layout
+
+\begin_layout Itemize
 Open source
 \end_layout
 
 \begin_layout Itemize
 Cross platform
-\end_layout
-
-\begin_layout Itemize
-Free
 \end_layout
 
 \begin_layout Itemize
@@ -3138,7 +3457,7 @@ when you encounter a problem, google it.
 
 \end_deeper
 \begin_layout Itemize
-Much much powerful than Ms-Word or Ms-Power point sketching capabilities
+Much much powerful than MS-Word or MS-Power point sketching capabilities
 \end_layout
 
 \begin_layout Itemize
@@ -3207,7 +3526,7 @@ tangent
 
 \end_deeper
 \begin_layout Itemize
-You can also draw
+Additionally, you can draw and edit:
 \end_layout
 
 \begin_deeper
@@ -3228,7 +3547,8 @@ text
 \end_layout
 
 \begin_layout Itemize
-latex-formulas
+\SpecialChar LaTeX
+ formulas
 \end_layout
 
 \begin_layout Itemize
@@ -3246,11 +3566,69 @@ function curves
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Import Graphics from pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename BasicADSL_Router.svg
+	width 90line%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
-You can edit them too
+You can import vector graphics from pdf files, and even edit them
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Interesting Plug-ins
 \end_layout
@@ -3260,7 +3638,16 @@ Interesting Plug-ins
 status open
 
 \begin_layout Plain Layout
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
 Function plotter
+\end_layout
+
+\end_inset
+
+Function Plotter
 \end_layout
 
 \end_inset
@@ -3269,6 +3656,28 @@ Function plotter
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+It is a built in plugins
+\end_layout
+
+\begin_layout Itemize
+It uses brazier curves, same as Inkscape
+\end_layout
+
+\begin_layout Itemize
+It calculates the function derivative and use it to adjust the curve slope
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It produces very smooth curves using much less points than Matlab
+\end_layout
+
+\begin_layout Itemize
+You can still adjust/correct the curve manually
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Box Frameless
 position "t"
@@ -3298,7 +3707,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename FunctionPlotter.png
+	filename FunctionPlotter_sinc.png
+	lyxscale 50
 	width 100line%
 
 \end_inset
@@ -3338,28 +3748,18 @@ status open
 
 \end_layout
 
-\begin_layout Itemize
-is a built in plugins
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename FunctionPlotterCapabilities.png
+	lyxscale 50
+	width 100line%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-uses brazier curves, same as Inkscape
-\end_layout
-
-\begin_layout Itemize
-calculates the function derivative and use it to adjust the curve slope
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-produces very smooth curves using much less points than Matlab
-\end_layout
-
-\begin_layout Itemize
-You can still adjust/correct the curve manually
-\end_layout
-
-\end_deeper
 \end_inset
 
 
@@ -3367,7 +3767,7 @@ You can still adjust/correct the curve manually
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
+\begin_inset Separator parbreak
 \end_inset
 
 
@@ -3378,7 +3778,16 @@ You can still adjust/correct the curve manually
 status open
 
 \begin_layout Plain Layout
-Tex Text
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+TexText
+\end_layout
+
+\end_inset
+
+TexText
 \end_layout
 
 \end_inset
@@ -3398,22 +3807,6 @@ It allows you to write/edit \SpecialChar LaTeX
 \begin_inset Graphics
 	filename FTPairs12.svg
 	width 100line%
-	BoundingBox 20mm 562.5mm 200mm 610mm
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Graphics
-	filename FTPairs12.svg
-	width 100line%
-	BoundingBox 20mm 400mm 200mm 457.5mm
-	clip
 
 \end_inset
 
@@ -3422,18 +3815,22 @@ It allows you to write/edit \SpecialChar LaTeX
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
+\begin_inset Separator parbreak
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Learning Inkscape
 \end_layout
 
 \begin_layout Frame
-\begin_inset Argument 4
+\begin_inset Flex PresentationMode
 status open
 
-\begin_layout Plain Layout
-Lets Learn Inkscape
+\begin_layout FrameTitle
+Learning Inkscape
 \end_layout
 
 \end_inset
@@ -3442,95 +3839,91 @@ Lets Learn Inkscape
 \end_layout
 
 \begin_deeper
-\begin_layout Description
-Test
-\begin_inset space ~
-\end_inset
-
-drive
-\begin_inset space ~
-\end_inset
-
-Inkscape
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
-Create some basic shapes and clone of them
+
+\series bold
+Explore
+\series default
+ menus and toolbars
 \end_layout
 
 \begin_layout Itemize
-Edit them, change line slopes, merge coincident points, make points tangents
- symmetric, \SpecialChar ldots
 
-\end_layout
-
-\begin_layout Itemize
-Write mathematical formula
-\end_layout
-
-\begin_layout Itemize
-Edit the Formula
-\end_layout
-
-\begin_layout Itemize
-Plot a function
-\end_layout
-
-\begin_layout Itemize
-Edit its points
-\end_layout
-
-\end_deeper
-\begin_layout Description
-Explore menus and toolbars
-\end_layout
-
-\begin_layout Description
+\series bold
 Official
 \begin_inset space ~
 \end_inset
 
-manual (attached) is very good and detailed.
- You can begin with chapters 2 and 5
+manual
+\series default
+ [Tavmjong Bah, Inkscape: Guide to a Vector Drawing Program, Pearson Education,
+ 4th ed, 2011] is very good and detailed
 \end_layout
 
-\begin_layout Description
+\begin_deeper
+\begin_layout Itemize
+Chapters
+\begin_inset space ~
+\end_inset
+
+1 includes 10 examples
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The first 3 examples are enough for a good start
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapters
+\begin_inset space ~
+\end_inset
+
+5 explains editing
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Surf it fast
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
 Help
 \begin_inset space ~
 \end_inset
 
-menu includes tutorials, FAQ, \SpecialChar ldots
+menu
+\series default
+ includes tutorials, FAQ, \SpecialChar ldots
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://inkscapetutorials.org/
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
+\begin_inset Separator parbreak
 \end_inset
 
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Import from pdf; Very Interesting 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-You can import a vector graphic from a pdf file and then improve/modify
- it
-\end_layout
-
-\end_deeper
 \end_body
 \end_document

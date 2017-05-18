@@ -9,7 +9,7 @@
 \usepackage{calc}
 \usepackage{datetime}
 \usepackage{pdflscape}
-\usepackage{multicol}
+\usepackage{chngcntr}
 
 \usetheme[hideothersubsections]{Goettingen}
 
@@ -122,7 +122,7 @@ multicol
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "TechnicalWriting_article.lyx"
+filename "Handouts.lyx"
 
 \end_inset
 
