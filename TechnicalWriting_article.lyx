@@ -1,0 +1,3536 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article-beamer
+\begin_preamble
+\usepackage{calc}
+\usepackage{datetime}
+\usepackage{pdflscape}
+
+\usetheme[hideothersubsections]{Goettingen}
+
+\usecolortheme{sidebartab}
+\usecolortheme{rose}
+\setbeamertemplate{blocks}[rounded]
+
+\allowdisplaybreaks
+\end_preamble
+\options intoc
+\use_default_options true
+\begin_modules
+multicol
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "tgtermes" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue,anchorcolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue,citecolor=blue,hypertexnames=false,pdfpagelayout=TwoPageRight,pdfstartview=Fit"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\notefontcolor #0000ff
+\branch ProblemsAnswers
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Problems
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Expose
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 4
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "breaklines=true,commentstyle={\color[rgb]{0,0.5,0}},keywordstyle={\color{blue}},stringstyle={\color{magenta}},tabsize=4,basicstyle={\ttfamily},columns=fullflexible"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{sidebar right}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  {
+\backslash
+usebeamerfont{title in sidebar}%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+vskip1.5em%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hskip3pt%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+usebeamercolor[fg]{title in sidebar}%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+insertshorttitle[width=2cm-6pt,center,respectlinebreaks]
+\backslash
+par%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+vskip1.25em%
+\end_layout
+
+\begin_layout Plain Layout
+
+  }%
+\end_layout
+
+\begin_layout Plain Layout
+
+  {%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hskip3pt%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+usebeamercolor[fg]{author in sidebar}%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+usebeamerfont{author in sidebar}%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+insertshortauthor[width=2cm-2pt,center,respectlinebreaks]
+\backslash
+par%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+vskip1.25em%
+\end_layout
+
+\begin_layout Plain Layout
+
+  }%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+hbox to2cm{
+\backslash
+hss
+\backslash
+insertlogo
+\backslash
+hss}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+vskip1.25em%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  {
+\backslash
+usebeamerfont{part page}%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hskip1pt%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+usebeamercolor[fg]{part page}%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Roman{part} 
+\backslash
+insertshortpart[width=2cm-2pt,respectlinebreaks]
+\backslash
+par%
+\end_layout
+
+\begin_layout Plain Layout
+
+  }%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  %Inserts the table of contents
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+insertverticalnavigation{2cm}%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+hbox to 2cm
+\end_layout
+
+\begin_layout Plain Layout
+
+ {%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hskip1pt%
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+insertframenavigationsymbol
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+insertsectionnavigationsymbol
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hfill
+\backslash
+usebeamerfont{subsection in sidebar}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+strut
+\backslash
+usebeamercolor[fg]{subsection in sidebar}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+insertframenumber
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hskip5pt
+\end_layout
+
+\begin_layout Plain Layout
+
+ }%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+vskip3pt%
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{section in toc}[ball unnumbered]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{subsection in toc}[square]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{frame end}{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+marginpar{
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+scriptsize
+\backslash
+hbox to 1cm{
+\backslash
+hfill
+\backslash
+strut
+\backslash
+insertframenumber}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+hrule height .2pt
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout Title (Plain Frame)
+Technical Writing and Presentation
+\end_layout
+
+\begin_layout Author
+Ahmed Desoki
+\end_layout
+
+\begin_layout Institute
+Aerospace Engineering Department
+\begin_inset Newline newline
+\end_inset
+
+Cairo University
+\end_layout
+
+\begin_layout TitleGraphic
+\noindent
+\begin_inset Graphics
+	filename AerospaceDeptLogo.jpg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Title (Plain Frame)
+Technical Writing and Presentation
+\end_layout
+
+\begin_layout Subtitle
+\begin_inset Graphics
+	filename AerospaceDeptLogo.jpg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ahmed Desoki
+\begin_inset Newline newline
+\end_inset
+
+Aerospace Engineering Department
+\begin_inset Newline newline
+\end_inset
+
+Cairo University
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+includegraphics[width=2cm]{AerospaceDeptLogo.jpg}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout FrameTitle
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%To force breaking long URL's
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sloppy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Open Source Software (OSS)
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+OSS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout FrameTitle
+Open Source Software (OSS)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It is a software whose source code is published and made available to the
+ public, enabling anyone to copy, modify and redistribute the source code
+ without paying royalties or fees.
+\end_layout
+
+\begin_layout Itemize
+It is very often developed in a public/collaborative manner through community
+ cooperation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+These communities are composed of individual programmers as well as very
+ large companies
+\end_layout
+
+\begin_layout Itemize
+Many of the individuals programmers who start an open source project usually
+ end up as large companies with open source programs
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+shrink
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Some Open Source Projects
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Block
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Application Software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+7-Zip
+\end_layout
+
+\begin_layout Itemize
+Blender
+\end_layout
+
+\begin_layout Itemize
+Eclipse
+\end_layout
+
+\begin_layout Itemize
+GIMP
+\end_layout
+
+\begin_layout Itemize
+Inkscape
+\end_layout
+
+\begin_layout Itemize
+Mozilla Firefox
+\end_layout
+
+\begin_layout Itemize
+Chromium
+\end_layout
+
+\begin_layout Itemize
+Mozilla Thunderbird
+\end_layout
+
+\begin_layout Itemize
+NASA World Wind
+\end_layout
+
+\begin_layout Itemize
+OpenOffice.org / LibreOffice
+\end_layout
+
+\begin_layout Itemize
+PrestaShop
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Block
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Programming Languages
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Perl 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+a general purpose programming language
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+PHP
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+scripting language suited for the web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Python
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+general purpose programming language
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ruby
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+general purpose programming language
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Block
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Operating Systems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Android
+\end_layout
+
+\begin_layout Itemize
+FreeBSD
+\end_layout
+
+\begin_layout Itemize
+Linux
+\end_layout
+
+\begin_layout Itemize
+OpenIndiana
+\end_layout
+
+\begin_layout Itemize
+ReactOS
+\end_layout
+
+\begin_layout Itemize
+Haiku
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Block
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Server Software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Apache
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+HTTP web server
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Drupal
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+content management system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+MediaWiki
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+wiki server software, the software that runs Wikipedia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+MongoDB
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+document-oriented, non-relational database
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Moodle
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+course management system or virtual learning environment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+WordPress
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+blog software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+TYPO3
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+enterprise content management system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Useful Links
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduction to Open Source Software (in Arabic) (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://ojuba.org/wiki/
+\backslash
+%D9
+\backslash
+%85
+\backslash
+%D9
+\backslash
+%82
+\backslash
+%D8
+\backslash
+%AF
+\backslash
+%D9
+\backslash
+%85
+\backslash
+%D8
+\backslash
+%A9_
+\backslash
+%D9
+\backslash
+%81
+\backslash
+%D9
+\backslash
+%8A_
+\backslash
+%D8
+\backslash
+%A7
+\backslash
+%D9
+\backslash
+%84
+\backslash
+%D8
+\backslash
+%A8
+\backslash
+%D8
+\backslash
+%B1
+\backslash
+%D9
+\backslash
+%85
+\backslash
+%D8
+\backslash
+%AC
+\backslash
+%D9
+\backslash
+%8A
+\backslash
+%D8
+\backslash
+%A7
+\backslash
+%D8
+\backslash
+%AA_
+\backslash
+%D8
+\backslash
+%A7
+\backslash
+%D9
+\backslash
+%84
+\backslash
+%D8
+\backslash
+%AD
+\backslash
+%D8
+\backslash
+%B1
+\backslash
+%D8
+\backslash
+%A9
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Open source is the backbone for Startups (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.findbestopensource.com/article-detail/open-source-startups
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+How to contribute to open source (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.findbestopensource.com/article-detail/contribute-to-opensource
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+en.opensuse.org/portal:How_to_participate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+How to learn from open source projects (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.findbestopensource.com/article-detail/learn_from_open-source
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+How to make money from Open Source (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.findbestopensource.com/article-detail/make_money_opensource
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Arabic websites
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.linuxac.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://itwadi.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.ojuba.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Imagine Publishing 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Linux User&Developer magazine (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.linuxuser.co.uk/
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Linux Tips, Tricks, Apps & Hacks (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.imagineshop.co.uk/bookazines.html
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Linux & Open Source Genius Guide (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.imagineshop.co.uk/bookazines.html
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+OSS Alternatives
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Alternatives
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Clone vs Non-clone Alternative
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Clone software always follows the original software, hence clone is
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+always lagging
+\end_layout
+
+\begin_layout Itemize
+usually inferior
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+In conclusion, often you won't be satisfied
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Examples
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+MS-Word vs Libre-office-Writer vs Abi-Word vs Calligra-Words vs Lyx
+\end_layout
+
+\begin_layout Itemize
+Matlab vs Scilab vs GNU-Octave vs SciPython-MatPlotLib
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Useful Links
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.findbestopensource.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cool list of Linux programs (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.dedoimedo.com/computers/new-cool-list-linux.html
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Learning New Software Packages
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout FrameTitle
+Learning New Software Packages
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Try/Explore/Read about capabilities of the new software package
+\end_layout
+
+\begin_layout Description
+Find good examples
+\end_layout
+
+\begin_layout Description
+Short course/training/tutorial/user-guide
+\end_layout
+
+\begin_layout Description
+Test your knowledge through a real project
+\end_layout
+
+\begin_layout Description
+Use a book/manual/reference
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Examples
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Make a project
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Prepare the manual/examples and your test project
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Prepare the CD and notes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Show example practically and show the examples and manual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AlertBlock
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+If you find expert who is willing to answer your questions
+\end_layout
+
+\begin_layout Itemize
+you are lucky
+\end_layout
+
+\begin_layout Itemize
+don't waste the chance
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Technical Writing
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Tech.
+ Writing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Introduction to \SpecialChar LaTeX
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Word Processors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Usually there are two categories of word processing software packages
+\end_layout
+
+\begin_layout Itemize
+What You See Is What You Get (WYSIWYG)
+\end_layout
+
+\begin_layout Itemize
+What You See Is What You Mean (WYSIWYM)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="45line%">
+<column alignment="center" valignment="middle" width="45line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WYSIWYG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WYSIWYM
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Microsoft
+\size default
+ Word
+\end_layout
+
+\begin_layout Plain Layout
+AbiWord
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+LibreOffice
+\size default
+ Writer
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Calligra
+\size default
+ Words
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Roughly, you can compare 
+\bar under
+\SpecialChar LaTeX
+  to Word
+\bar default
+ as you compare 
+\bar under
+Matlab to Excel
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+ vs Microsoft Word
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Latex_vs_Word1.png
+	width 100line%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\SpecialChar LaTeX
+  is a document markup language.
+\end_layout
+
+\begin_layout Itemize
+Simply you can think of it as similar to HTML
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+(HyperText Markup Language)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In order to create a document in \SpecialChar LaTeX
+, a 
+\series bold
+.tex
+\series default
+ file must be created using some 
+\series bold
+\bar under
+text editor
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+.tex
+\series default
+ file is then 
+\series bold
+\bar under
+compiled
+\series default
+\bar default
+ to produce the document
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LaTeX
+  can generate several document formats including 
+\begin_inset Quotes eld
+\end_inset
+
+pdf
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+ is Free
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Although being free is an advantage, but it is a drawback at the same time
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Slow download server
+\end_layout
+
+\begin_layout Itemize
+No clean official documentation
+\end_layout
+
+\begin_layout Itemize
+Several alternatives to do the same thing
+\end_layout
+
+\end_deeper
+\begin_layout Description
+However; \SpecialChar LaTeX
+ is very mature and widely used by professional/enterprise publishers
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Also it has a big user community
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+when you encounter a problem, google it.
+ Most likely you will find others had encountered it and found a solution
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+ Editors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+To write C/C++ code, any text editor can be used.
+ But using a good IDE can greatly ease your job.
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar LaTeX
+ is similar.
+ Any text editor is ok, but a dedicated \SpecialChar LaTeX
+ editor is strongly recommended.
+\end_layout
+
+\begin_layout Itemize
+A dedicated \SpecialChar LaTeX
+ editor
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+can highlight and auto complete \SpecialChar LaTeX
+ keywords
+\end_layout
+
+\begin_layout Itemize
+has several \SpecialChar LaTeX
+ templates for several types of documents
+\end_layout
+
+\begin_layout Itemize
+facilitates compiling and debugging
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar ldots
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Some \SpecialChar LaTeX
+ Editors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Kile; works on Linux, but can also work on Windows (my favorite)
+\end_layout
+
+\begin_layout Description
+Texmaker; cross-platform
+\end_layout
+
+\begin_layout Description
+and many others
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Description
+UltraEdit; a very powerful text editor 
+\series bold
+only
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Keep Concentrating
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Due to its WYSIWYM nature, I feel 
+\bar under
+more
+\bar default
+ concentrating while using 
+\series bold
+\SpecialChar LaTeX
+
+\series default
+ as compared to 
+\series bold
+Ms-Word
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+\SpecialChar LyX
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout FrameTitle
+\SpecialChar LyX
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\SpecialChar LyX
+ is a front-end to \SpecialChar LaTeX
+ 
+\end_layout
+
+\begin_layout Itemize
+You can think of the 
+\bar under
+\SpecialChar LyX
+-\SpecialChar LaTeX
+
+\bar default
+ relationship as similar to the 
+\bar under
+Visual
+\begin_inset space ~
+\end_inset
+
+Studio-C++
+\begin_inset space ~
+\end_inset
+
+compiler
+\bar default
+ relationship
+\end_layout
+
+\begin_layout Itemize
+Unlike \SpecialChar LaTeX
+, \SpecialChar LyX
+ comes with 
+\bar under
+tidy and very good
+\bar default
+ manuals
+\end_layout
+
+\begin_layout Itemize
+Also it has a big community, i.e.,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+it is mature enough
+\end_layout
+
+\begin_layout Itemize
+when you encounter a problem, google it.
+ Most likely you will find others had encountered it and found a solution
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Keep your concentration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Due to its WYSIWYM nature, I feel 
+\bar under
+very
+\bar default
+ concentrating while using 
+\series bold
+\SpecialChar LyX
+
+\series default
+ as compared to 
+\series bold
+Ms-Word
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lets Learn \SpecialChar LyX
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Help
+\begin_inset space ~
+\end_inset
+
+menu includes very good manuals.
+ The manuals themselves are \SpecialChar LyX
+ documents.
+ So they are essentially very good \SpecialChar LyX
+ examples.
+\end_layout
+
+\begin_layout Description
+lyx
+\backslash
+examples folder contains wide variety of very good examples
+\end_layout
+
+\begin_layout Description
+Explore menus and toolbars
+\end_layout
+
+\begin_layout Description
+Test
+\begin_inset space ~
+\end_inset
+
+drive
+\begin_inset space ~
+\end_inset
+
+\SpecialChar LyX
+ to recreate the attached final exam
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Presentations
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Beamer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Beamer is a \SpecialChar LaTeX
+ class for creating 
+\series bold
+professional
+\series default
+ presentation slides
+\end_layout
+
+\begin_layout Description
+Beamer
+\begin_inset space ~
+\end_inset
+
+template is a built in template in \SpecialChar LyX
+ provides to enable easily building presentat
+ions in \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Description
+Beamer
+\begin_inset space ~
+\end_inset
+
+manual explain creating Beamer presentations in plain LaTex and \SpecialChar LyX
+ as well
+\end_layout
+
+\begin_layout Standard
+Check this; 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.hartwork.org/beamer-theme-matrix/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Presentation Handouts
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Beamer-Article class is also available.
+ It renders the slides on standard sized paper (like A4 or letter), with
+ frame titles used as paragraph titles, no special slide layout/colors and
+ keeps the sectioning.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Beamer article class is suitable for creating lecture handouts (article)
+\end_layout
+
+\begin_layout Itemize
+You can have a single 
+\bar under
+source file
+\bar default
+ for the slides and its handouts
+\end_layout
+
+\begin_layout Itemize
+You can still control the source file so that the 
+\series bold
+slides
+\series default
+ and the 
+\series bold
+article
+\series default
+ are different.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+You can also use the Beamer-Article class within \SpecialChar LyX
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Keep your concentration
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Due to its WYSIWYM nature, I feel 
+\bar under
+very very very
+\bar default
+ concentrating while using 
+\series bold
+\SpecialChar LyX
+-Beamer
+\series default
+ as compared to 
+\series bold
+Ms-Power Point
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lets Learn Beamer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Attached
+\begin_inset space ~
+\end_inset
+
+samples are a very good variety of presentations
+\end_layout
+
+\begin_layout Description
+Explore the styles list
+\end_layout
+
+\begin_layout Description
+Test
+\begin_inset space ~
+\end_inset
+
+drive
+\begin_inset space ~
+\end_inset
+
+Beamer to create this presentation
+\end_layout
+
+\begin_layout Description
+Create the handouts of this presentation
+\end_layout
+
+\begin_layout Description
+Beamer
+\begin_inset space ~
+\end_inset
+
+manual includes all the details you need to know
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Lyx and Arabic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Vector Graphics using Inkscape
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Inkscape
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Raster
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Raster graphics
+\end_layout
+
+\end_inset
+
+ vs Vector Graphics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename SineFig3.png
+	lyxscale 50
+	width 49line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename SineFig3.pdf
+	lyxscale 50
+	width 49line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename Tiger_by_mittelpunkt.jpg
+	lyxscale 50
+	width 45line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Tiger.svg
+	lyxscale 50
+	width 45line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename YaoMingmeme.jpg
+	width 43line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename YaoMing.svg
+	width 45line%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Graphics Formats
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="2em">
+<column alignment="center" valignment="top" width="35line%">
+<column alignment="center" valignment="top" width="3em">
+<column alignment="center" valignment="top" width="35line%">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raster
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vector
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.bmp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uncompressed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.pdf
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compressed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.png
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Loose-less compression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.eps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.jpg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lossy compression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.emf
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+compatible with Ms Office
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.svg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Vector Graphics Editors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Itemize
+Adobe Illustrator 
+\size scriptsize
+(
+\emph on
+de facto
+\emph default
+ standard; bloated)
+\end_layout
+
+\begin_layout Itemize
+Corel Draw 
+\size scriptsize
+(bloated)
+\end_layout
+
+\begin_layout Itemize
+Inkscape (light, free, cross-platform and popular; my favorite)
+\end_layout
+
+\begin_layout Itemize
+LibreOffice Draw
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar ldots
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Inkscape
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Open source
+\end_layout
+
+\begin_layout Itemize
+Cross platform
+\end_layout
+
+\begin_layout Itemize
+Free
+\end_layout
+
+\begin_layout Itemize
+Has a big community, i.e.,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+it is mature enough
+\end_layout
+
+\begin_layout Itemize
+when you encounter a problem, google it.
+ Most likely you will find others had encountered it and found a solution
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Much much powerful than Ms-Word or Ms-Power point sketching capabilities
+\end_layout
+
+\begin_layout Itemize
+Has several plugins that greatly expand its capabilities
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Inkscape Capabilities
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Inkscape is based on brazier curves
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Defines a curve using four information, 
+\series bold
+\bar under
+start
+\series default
+\bar default
+, 
+\series bold
+\bar under
+end
+\series default
+\bar default
+, 
+\series bold
+\bar under
+start
+\begin_inset space ~
+\end_inset
+
+tangent
+\series default
+\bar default
+ and 
+\series bold
+\bar under
+end
+\begin_inset space ~
+\end_inset
+
+tangent
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+You can also draw
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Itemize
+straight lines
+\end_layout
+
+\begin_layout Itemize
+circles/arcs/ellipses
+\end_layout
+
+\begin_layout Itemize
+text
+\end_layout
+
+\begin_layout Itemize
+latex-formulas
+\end_layout
+
+\begin_layout Itemize
+function curves
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar ldots
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+You can edit them too
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Interesting Plug-ins
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Function plotter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "49line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename FunctionPlotter.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "49line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+is a built in plugins
+\end_layout
+
+\begin_layout Itemize
+uses brazier curves, same as Inkscape
+\end_layout
+
+\begin_layout Itemize
+calculates the function derivative and use it to adjust the curve slope
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+produces very smooth curves using much less points than Matlab
+\end_layout
+
+\begin_layout Itemize
+You can still adjust/correct the curve manually
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tex Text
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+It allows you to write/edit \SpecialChar LaTeX
+ formulas inside Inkscape
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename FTPairs12.svg
+	width 100line%
+	BoundingBox 20mm 562.5mm 200mm 610mm
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename FTPairs12.svg
+	width 100line%
+	BoundingBox 20mm 400mm 200mm 457.5mm
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lets Learn Inkscape
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Test
+\begin_inset space ~
+\end_inset
+
+drive
+\begin_inset space ~
+\end_inset
+
+Inkscape
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Create some basic shapes and clone of them
+\end_layout
+
+\begin_layout Itemize
+Edit them, change line slopes, merge coincident points, make points tangents
+ symmetric, \SpecialChar ldots
+
+\end_layout
+
+\begin_layout Itemize
+Write mathematical formula
+\end_layout
+
+\begin_layout Itemize
+Edit the Formula
+\end_layout
+
+\begin_layout Itemize
+Plot a function
+\end_layout
+
+\begin_layout Itemize
+Edit its points
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Explore menus and toolbars
+\end_layout
+
+\begin_layout Description
+Official
+\begin_inset space ~
+\end_inset
+
+manual (attached) is very good and detailed.
+ You can begin with chapters 2 and 5
+\end_layout
+
+\begin_layout Description
+Help
+\begin_inset space ~
+\end_inset
+
+menu includes tutorials, FAQ, \SpecialChar ldots
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Import from pdf; Very Interesting 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You can import a vector graphic from a pdf file and then improve/modify
+ it
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
