@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -38,6 +38,8 @@ multicol
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 1
@@ -77,6 +79,7 @@ multicol
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \notefontcolor #0000ff
 \branch ProblemsAnswers
 \selected 0
@@ -105,7 +108,10 @@ multicol
 \tocdepth 4
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle empty
@@ -348,6 +354,13 @@ hskip1pt%
 
 \begin_layout Plain Layout
 
+%    
+\backslash
+insertslidenavigationsymbol
+\end_layout
+
+\begin_layout Plain Layout
+
     
 \backslash
 insertframenavigationsymbol
@@ -355,9 +368,30 @@ insertframenavigationsymbol
 
 \begin_layout Plain Layout
 
-    
+%    
+\backslash
+insertsubsectionnavigationsymbol
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
 \backslash
 insertsectionnavigationsymbol
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+insertdocnavigationsymbol
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+insertbackfindforwardnavigationsymbol
 \end_layout
 
 \begin_layout Plain Layout
@@ -423,6 +457,97 @@ vskip3pt%
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{math text}{family=
+\backslash
+rmfamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamercolor{math text}{fg=red}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{title}{series=
+\backslash
+normalfont,size=
+\backslash
+LARGE}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{title in sidebar}{series=
+\backslash
+bfseries}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{author in sidebar}{series=
+\backslash
+bfseries}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont*{item}{series=}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{frametitle}{size=}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{block title}{size=
+\backslash
+small}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setbeamerfont{subtitle}{size=
+\backslash
+normalsize,series=
+\backslash
+normalfont}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 setbeamertemplate{section in toc}[ball unnumbered]
@@ -435,6 +560,260 @@ setbeamertemplate{section in toc}[ball unnumbered]
 setbeamertemplate{subsection in toc}[square]
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{theorems}[numbered]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginPart{    %This displays a frame with the current part name at the
+ beginning of each part.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[shrink]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{Outline}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents[hideallsubsections]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[] % Do nothing for 
+\backslash
+section*
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[shrink]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{Outline}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents[sectionstyle=show/shaded,subsectionstyle=hide/hide/hide,subsubse
+ctionstyle=hide/hide/hide/hide]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[] % Do nothing for 
+\backslash
+subsection*
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[shrink]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{Outline}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsub
+sectionstyle=hide/hide/hide/hide]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsubsection[] % Do nothing for 
+\backslash
+subsubsection*
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[shrink]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{Outline}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsub
+sectionstyle=show/shaded/hide/hide]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -442,7 +821,7 @@ setbeamertemplate{subsection in toc}[square]
 
 \begin_layout Standard
 \begin_inset Flex ArticleMode
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -497,6 +876,24 @@ hrule height .2pt
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+includegraphics[width=2cm]{AerospaceDeptLogo.jpg}}
 \end_layout
 
 \end_inset
@@ -821,49 +1218,6 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-phantomsection
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlength{
-\backslash
-columnseprule}{1pt}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-logo{
-\backslash
-includegraphics[width=2cm]{AerospaceDeptLogo.jpg}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Flex ArticleMode
 status open
 
@@ -887,17 +1241,28 @@ status open
 
 
 \backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 pagenumbering{arabic}
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+setlength{
+\backslash
+columnseprule}{1pt}
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -911,3406 +1276,6 @@ status open
 sloppy
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Free and Open-Source Software (
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-FOSS
-\end_layout
-
-\end_inset
-
-FOSS)
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-FOSS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FOSS"
-description "Free and Open-Source Software"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Free Software
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Free SW
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Free Software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Free Software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Free software respect users' freedom and the community.
-\end_layout
-
-\begin_layout Itemize
-Roughly, it means that the users have the 
-\series bold
-freedom
-\series default
- to run, copy, distribute, study, change and improve the software
-\end_layout
-
-\begin_layout Itemize
-Thus, 
-\begin_inset Quotes eld
-\end_inset
-
-free software
-\begin_inset Quotes erd
-\end_inset
-
- is a matter of 
-\series bold
-liberty, not price
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Open-Source Software (
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-OSS
-\end_layout
-
-\end_inset
-
-OSS)
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-OSS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Open Source Software (OSS)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "OSS"
-description "Open Source Software"
-
-\end_inset
-
-They are computer software with source code published and made available
- with a 
-\series bold
-\emph on
-\bar under
-license
-\series default
-\emph default
-\bar default
-.
-\end_layout
-
-\begin_layout Itemize
-OSS are very often developed in a collaborative public manner through 
-\series bold
-\emph on
-community cooperation
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Communities may be composed of:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-individual programmers
-\end_layout
-
-\begin_layout Itemize
-very large companies
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
-Many individuals programmers who start an open source project usually end
- up as large companies with open source programs
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-The Brute Force of Public Collaboration
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Collaboration Force
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status open
-
-\begin_layout Plain Layout
-shrink
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-The Brute Force of Public Collaboration
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-The main power of a OSS project comes from the collaboration
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Constructive collaboration requires good management by wise and clever board.
-\end_layout
-
-\end_inset
-
- of minds and efforts of large number of savvy contributors.
-\end_layout
-
-\begin_layout Itemize
-This enabled many FOSS projects to surpass big commercial competitors.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Typical examples are Linux and Firefox as compared to Windows and Internet
- Explorer
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-On the other hand, FOSS may suffer from serious drawbacks such as:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-no warranty/guarantee/support
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Community support cannot be accepted by serious customers who are unwilling
- to publishing their work to the public.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-less polished/stable
-\end_layout
-
-\begin_layout Itemize
-less friendly user interface
-\end_layout
-
-\begin_layout Itemize
-lack of complete and high quality documentation
-\end_layout
-
-\begin_layout Itemize
-Slow download server
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-FOSS
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-FOSS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-[
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://en.wikipedia.org/wiki/Free_and_open-source_software
-\end_layout
-
-\end_inset
-
-]
-\end_layout
-
-\begin_layout Standard
-A FOSS is computer software that can be classified as both 
-\emph on
-free SW
-\emph default
- and OSS.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Notable FOSS Projects
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Block
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Application Software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-\noindent
-\begin_inset Flex Multiple Columns
-status open
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-7-Zip
-\end_layout
-
-\begin_layout Itemize
-Blender
-\end_layout
-
-\begin_layout Itemize
-Eclipse
-\end_layout
-
-\begin_layout Itemize
-GIMP
-\end_layout
-
-\begin_layout Itemize
-Inkscape
-\end_layout
-
-\begin_layout Itemize
-Firefox
-\end_layout
-
-\begin_layout Itemize
-Chromium
-\end_layout
-
-\begin_layout Itemize
-Thunderbird
-\end_layout
-
-\begin_layout Itemize
-NASA World Wind
-\end_layout
-
-\begin_layout Itemize
-OpenOffice.org
-\end_layout
-
-\begin_layout Itemize
-LibreOffice
-\end_layout
-
-\begin_layout Itemize
-PrestaShop
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Block
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Programming Languages
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-\noindent
-\begin_inset Flex Multiple Columns
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-4
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Perl 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-a general purpose programming language
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-PHP
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-scripting language suited for the web
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Python
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-general purpose programming language
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Ruby
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-general purpose programming language
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Block
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Operating Systems
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-\noindent
-\begin_inset Flex Multiple Columns
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Android
-\end_layout
-
-\begin_layout Itemize
-FreeBSD
-\end_layout
-
-\begin_layout Itemize
-Linux
-\end_layout
-
-\begin_layout Itemize
-OpenIndiana
-\end_layout
-
-\begin_layout Itemize
-ReactOS
-\end_layout
-
-\begin_layout Itemize
-Haiku
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Block
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Server Software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-\noindent
-\begin_inset Flex Multiple Columns
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Apache
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-HTTP web server
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Drupal
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-content management system
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-MediaWiki
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-wiki server software, the software that runs Wikipedia
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-MongoDB
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-document-oriented, non-relational database
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Moodle
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-course management system or virtual learning environment
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-WordPress
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-blog software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-TYPO3
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-enterprise content management system
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-The Widespread of FOSS Nowadays
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-FOSS such as Linux, BSD descendants
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-such as MacOS and iOS
-\end_layout
-
-\end_inset
-
- and Firefox, are very widely utilized nowadays, powering millions of servers,
- desktops, smart-phones
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-e.g.
- Android
-\end_layout
-
-\end_inset
-
-, and other devices.
-\end_layout
-
-\begin_layout Itemize
-FOSS even became a part of many commercial software and hardware.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Useful Links
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Introduction to Open Source Software (in Arabic) (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://ojuba.org/wiki/
-\backslash
-%D9
-\backslash
-%85
-\backslash
-%D9
-\backslash
-%82
-\backslash
-%D8
-\backslash
-%AF
-\backslash
-%D9
-\backslash
-%85
-\backslash
-%D8
-\backslash
-%A9_
-\backslash
-%D9
-\backslash
-%81
-\backslash
-%D9
-\backslash
-%8A_
-\backslash
-%D8
-\backslash
-%A7
-\backslash
-%D9
-\backslash
-%84
-\backslash
-%D8
-\backslash
-%A8
-\backslash
-%D8
-\backslash
-%B1
-\backslash
-%D9
-\backslash
-%85
-\backslash
-%D8
-\backslash
-%AC
-\backslash
-%D9
-\backslash
-%8A
-\backslash
-%D8
-\backslash
-%A7
-\backslash
-%D8
-\backslash
-%AA_
-\backslash
-%D8
-\backslash
-%A7
-\backslash
-%D9
-\backslash
-%84
-\backslash
-%D8
-\backslash
-%AD
-\backslash
-%D8
-\backslash
-%B1
-\backslash
-%D8
-\backslash
-%A9
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Open source is the backbone for Startups (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.findbestopensource.com/article-detail/open-source-startups
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-How to contribute to open source (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.findbestopensource.com/article-detail/contribute-to-opensource
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-en.opensuse.org/portal:How_to_participate
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-How to learn from open source projects (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.findbestopensource.com/article-detail/learn_from_open-source
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-How to make money from Open Source (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.findbestopensource.com/article-detail/make_money_opensource
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Arabic websites
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.linuxac.org
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://itwadi.com
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.ojuba.org/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Imagine Publishing 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Linux User&Developer magazine (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.linuxuser.co.uk/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Linux Tips, Tricks, Apps & Hacks (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://www.imagineshop.co.uk/bookazines.html
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Linux & Open Source Genius Guide (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-https://www.imagineshop.co.uk/bookazines.html
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Subsection
-OSS Development Tools
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Development
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-OSS Development Tools
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-In OSS development, the participants are distributed among different regions.
-\end_layout
-
-\begin_layout Itemize
-So there is a need for tools to aid participants to collaborate in source
- code development
-\end_layout
-
-\begin_layout Itemize
-Often, these tools are also available as OSS
-\end_layout
-
-\end_deeper
-\begin_layout Plain Layout
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Software Development Management System
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Some sites provide many tools to aid software management and development,
- such as:
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-\begin_inset Flex Multiple Columns
-status open
-
-\begin_layout Itemize
-Revision control system
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-See sec.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Revision-Control-System"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Bug tracking system
-\end_layout
-
-\begin_layout Itemize
-Code hosting
-\end_layout
-
-\begin_layout Itemize
-Forums and/or Mailing List
-\end_layout
-
-\begin_layout Itemize
-Download service (software archive)
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Samples such sites are:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-SourceForge (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://sourceforge.net/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-GNU Savannah (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://savannah.gnu.org/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-GitLab (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://gitlab.com/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-GitHub (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://github.com/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Bitbucket (
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://bitbucket.org/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Useful link
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Where should I host my open source code? (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.findbestopensource.com/article-detail/host-open-source-code
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Plain Layout
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Bug Tracking System
-\end_layout
-
-\end_inset
-
-Bug Tracking System
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Plain Layout
-\noindent
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "50line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-It is a software application designed to help programmers keep track of
- reported bugs
-\end_layout
-
-\begin_layout Itemize
-Sample bug trackers are:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Bugzilla (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.bugzilla.org
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-GNATS (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.gnu.org/software/gnats/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Check 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://en.opensuse.org/openSUSE:Submitting_bug_reports
-\end_layout
-
-\end_inset
-
- for more information
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "45line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0pt
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Bugzilla_Lifecycle.svg
-	lyxscale 50
-	width 100line%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Plain Layout
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Open Source Licenses
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-License
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-License
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Open Source Licenses
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-License defines the rights and obligations the copyright holder grants to
- licensees.
-\end_layout
-
-\begin_layout Itemize
-Open Source licenses may grant or deny users
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- licensees
-\end_layout
-
-\end_inset
-
- the right to copy, modify and redistribute the software (or content)
-\end_layout
-
-\begin_layout Itemize
-Licenses, however, may also impose obligations, such as:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-modifications to the code that are distributed must be made available in
- source code form
-\end_layout
-
-\begin_layout Itemize
-an author attribution must be placed in a program/documentation using that
- Open Source
-\end_layout
-
-\begin_layout Itemize
-any dependent software must be licensed under the same license
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Example OSS licenses are
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Software licensing, Linux User & Developer magazine, Issue 180, pages 28–31
-\end_layout
-
-\end_inset
-
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Apache License 2.0
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Recommended for software if you want a permissive license but also want
- to grant patent rights.
-\end_layout
-
-\begin_layout Itemize
-Being permissive, it allows for derivative works to be released under different
- terms which can also be distributed commercially.
-\end_layout
-
-\begin_layout Itemize
-Apache and Android are released under this license.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-BSD license
-\end_layout
-
-\end_inset
-
-BSD license
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Latest version requires that derivative works do not use the name of the
- original project or its developers for promotion without express permission.
-\end_layout
-
-\begin_layout Itemize
-Only recommended for software and not other works.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-GNU General Public License (GPL
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GPL"
-description "General Public License"
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-GPL
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Requires the release of complete source code of licensed work.
-\end_layout
-
-\begin_layout Itemize
-Modifications and derivative works should also be released under the same
- license.
-\end_layout
-
-\begin_layout Itemize
-Recommended only for software.
-\end_layout
-
-\begin_layout Itemize
-Bash and GIMP are released under GPLv3.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-GNU Lesser General Public License (LGPL
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "LGPL"
-description "Lesser General Public License"
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-LGPL
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Makes it possible to release derivative works under a different license
- if it only makes use of LGPL’s code as shared libraries.
-\end_layout
-
-\begin_layout Itemize
-This allows for code to be used even in proprietary projects.
-\end_layout
-
-\begin_layout Itemize
-This is why the license is used primarily for software libraries.
-\end_layout
-
-\begin_layout Itemize
-It is similar to GPLv3 in all other aspects.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-MIT License
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-A short and very permissive license.
-\end_layout
-
-\begin_layout Itemize
-Allows for licensed work to be used for commercial use.
-\end_layout
-
-\begin_layout Itemize
-Derivative works may be released under different terms and without source
- code.
-\end_layout
-
-\begin_layout Itemize
-Modifications can be used privately and don’t have to be released publicly.
-\end_layout
-
-\begin_layout Itemize
-Used by Rails, jQuery and many others for its simplicity.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Creative Commons (CC
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "CC"
-description "Creative Commons"
-
-\end_inset
-
-) License
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Recommended for non-software works such as images, artwork and music.
-\end_layout
-
-\begin_layout Itemize
-The copyleft CC-BY-SA allows for modifications of licensed work, distribution
- of derivative work for commercial use, but under the same license.
-\end_layout
-
-\begin_layout Itemize
-Permissive and only requires attribution.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Eclipse Public License
-\end_layout
-
-\begin_layout Itemize
-Mozilla Public License
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Flex ArticleMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Open Source Licenses comparison (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://web.archive.org/web/20090317083515/http://developer.kde.org/documentation/lic
-ensing/licenses_summary.html
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex PresentationMode
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-tiny
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="4">
-<features islongtable="true" firstHeadTopDL="true" firstHeadBottomDL="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
-<column alignment="center" valignment="top" width="10line%">
-<column alignment="center" valignment="top" width="26line%">
-<column alignment="center" valignment="top" width="26line%">
-<column alignment="center" valignment="top" width="26line%">
-<row endhead="true" endfirsthead="true">
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-License
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Proprietary Software linking
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Distribution
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Redistributing of modified code
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "GPL"
-target "http://www.fsf.org/copyleft/gpl.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Not allowed 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only with GPL compatible software
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only if derivative is GPL compatible
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "LGPL"
-target "http://www.fsf.org/copyleft/lesser.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-You have to provide source code of the distributed LGPL library with (if
- any) modifications, changes to the LGPL library should be allowed to third
- parties and if BC your app/lib should still work with the modified LGPL
- lib/app.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only if the derivative is LGPL or GPL
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "Apple Public"
-target "http://www.opensource.org/licenses/apsl.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only under Apple Public license
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "Apache Public"
-target "http://www.opensource.org/licenses/apachepl.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-As long as the name 
-\begin_inset Quotes eld
-\end_inset
-
-Apache
-\begin_inset Quotes erd
-\end_inset
-
- isn't used in the name of the derivative work
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "BSD"
-target "http://www.opensource.org/licenses/bsd-license.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "CPL"
-target "http://www.opensource.org/licenses/cpl.php"
-
-\end_inset
-
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "CPL"
-description "Common Public License"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Not clear
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fn:But-do-not"
-
-\end_inset
-
-But do not mix code covered by this license with incompatible licenses.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Not clear
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fn:But-do-not"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only under CPL compatible license
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "Jabber"
-target "http://www.opensource.org/licenses/jabberpl.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Only the portions of 
-\begin_inset Quotes eld
-\end_inset
-
-the Work
-\begin_inset Quotes erd
-\end_inset
-
- licensed under the Jabber license needs to stay licensed as such.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Can be under a different license as long as the source code is provided
- and a few License specific requirements are fulfilled.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "MIT (X11)"
-target "http://www.opensource.org/licenses/mit-license.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "MPL"
-target "http://www.opensource.org/licenses/mozilla1.1.php"
-
-\end_inset
-
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "MPL"
-description "Mozilla Public License"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only under MPL
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "Python"
-target "http://www.opensource.org/licenses/pythonpl.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed (?)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed, assuming the package includes a list of changes to the original
- Python and copyright notices on all files.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "Sun Public"
-target "http://www.opensource.org/licenses/sunpublic.php"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Allowed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Only under Sun Public
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-If you want help choosing a license for your 
-\series bold
-\emph on
-open source
-\series default
-\emph default
- project, check 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://choosealicense.com/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ArticleMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-OSS Alternatives
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Alternatives
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout Frame
-\begin_inset Argument 3
-status open
-
-\begin_layout Plain Layout
-label=CloneAlternative
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Clone
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Clone
-\end_layout
-
-\end_inset
-
- vs Non-clone
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Non-clone
-\end_layout
-
-\end_inset
-
- Alternative
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Clone software always follow the original software.
- Hence clones are
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-always lagging
-\end_layout
-
-\begin_layout Itemize
-usually inferior
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-In conclusion, often you won't be satisfied
-\end_layout
-
-\begin_layout ExampleBlock
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Examples
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-MS-Word vs Libre-office-Writer vs Lyx
-\end_layout
-
-\begin_layout Itemize
-Matlab vs Scilab vs GNU-Octave vs SciPython-MatPlotLib
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Plain Layout
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ArticleMode
-status open
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Clone vs Non-clone Alternative
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Clone software
-\end_layout
-
-\end_inset
-
-Clone software always follow the original software, hence clones are
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-always lagging
-\end_layout
-
-\begin_layout Itemize
-usually inferior
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-In conclusion, often you won't be satisfied
-\end_layout
-
-\begin_layout ExampleBlock
-\begin_inset Argument 2
-status collapsed
-
-\begin_layout Plain Layout
-Examples
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-MS-Word vs Libre-office-Writer vs Abi-Word vs Calligra-Words vs Lyx
-\end_layout
-
-\begin_layout Itemize
-Matlab vs Scilab vs GNU-Octave vs SciPython-MatPlotLib
-\end_layout
-
-\end_deeper
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Useful Links
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.findbestopensource.com/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Cool list of Linux programs (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.dedoimedo.com/computers/new-cool-list-linux.html
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Ohloh (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.ohloh.net/
-\end_layout
-
-\end_inset
-
-): very useful for checking the current state of an OSS
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-Learning New Software Packages
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Learning
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Learning New Software Packages
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Try/Explore/Read about capabilities of the new software package
-\end_layout
-
-\begin_layout Description
-Find good examples
-\end_layout
-
-\begin_layout Description
-Short course/training/tutorial/user-guide
-\end_layout
-
-\begin_layout Description
-Test your knowledge through a real project
-\end_layout
-
-\begin_layout Description
-Use a book/manual/reference
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Examples
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Make a project
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Prepare the manual/examples and your test project
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Prepare the CD and notes
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Show example practically and show the examples and manual
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout AlertBlock
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-If you find expert who is willing to answer your questions;
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-you are lucky
-\end_layout
-
-\begin_layout Itemize
-don't waste the chance
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-FOSS or Commercial SW?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Source: [
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://www.code-aster.de/code-aster.html
-\end_layout
-
-\end_inset
-
-].
-\end_layout
-
-\begin_layout Standard
-When using a free sw, you might experience pitfalls such as:
-\end_layout
-
-\begin_layout Itemize
-installation is difficult or fails
-\end_layout
-
-\begin_layout Itemize
-sw crashes
-\end_layout
-
-\begin_layout Itemize
-graphics problems
-\end_layout
-
-\begin_layout Itemize
-lack of documentation
-\end_layout
-
-\begin_layout Itemize
-lack of experiences (or experiences are spread all over the web)
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\begin_layout Standard
-This is why many serious users rely on a commercial sw which assures the
- proper functioning of a software on a determinate computer system.
-\end_layout
-
-\begin_layout AlertBlock
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Customers Fear
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Serious customers fear that saved license costs at the end must be payed
- by harder work and more time of the engineers in order to make the free
- sw work well.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-The Cultural Gap between Commercial and FOSS
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-A commercial software company usually has:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-enough number of programmers
-\end_layout
-
-\begin_layout Itemize
-clear plans/decisions based on accumulated experience with serious customers
-\end_layout
-
-\begin_layout Itemize
-financial resources that enable them to outsource difficult unexpected problems
- to experts anywhere in the world to obtain high quality solutions.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-On the other hand, a small group of clever and dedicated programmer work
- for free
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-or for scarce non-regular donations
-\end_layout
-
-\end_inset
-
-, and hence they intermittently in their spare time.
-\end_layout
-
-\begin_layout Itemize
-What the commercial company can achieve in 1~2 months usually takes about
- 1~2 years by the small programmers group
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Of course, if the number of programmers is increased and more importantly,
- harmony could be achieved during their collaboration, careful design and
- planning of the software may be achieved vary fast, even faster than commercial
- companies.
- This may be the case for small projects such as a web browser or video
- player projects.
- But this is hardly possible for very big projects spanning a multitude
- of different disciplines such as a multiphysics software package such as
- Ansys, or big CAD software package spanning drafting, part design, assembly,
- generating detailed drawings, CAE (spanning multiphysics problems, using
- FEA and other essentially different methods, dynamics, \SpecialChar ldots
-), CAM, Testing,
- PLM, \SpecialChar ldots
-.
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-That is, the fruit of a month of hard work in the commercial company does
- differ in quality and quantity from that of the small programmers group.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-However, the monthly announcements, of both the company and the programmers
- group, usually use similar words/expressions.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Both of them are saying the truth, from their points of view.
-\end_layout
-
-\begin_layout Itemize
-In other words, there is a 
-\series bold
-\emph on
-cultural gap
-\series default
-\emph default
- between commercial companies and small programmer groups.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Confusion of the User
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-From the point of view of an announcement reader seeking to select either
- the commercial of the FOSS, he will understand the announcements according
- to his background experience.
-\end_layout
-
-\begin_layout Itemize
-That is, if the reader is not aware of the aforementioned cultural gab,
- he may think there is no big difference between commercial and FOSS.
-\end_layout
-
-\begin_layout Itemize
-That is, the reader must be aware of the cultural gab between both the commercia
-l and free worlds in order to weight the respective announcements correctly
- and take the correct decision.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
 \end_inset
 
 
@@ -4346,6 +1311,7 @@ Word Processors
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 Usually there are two categories of word processing software packages
 \end_layout
 
@@ -4516,17 +1482,6 @@ status open
 \begin_layout Subsection
 \SpecialChar LaTeX
 
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-\SpecialChar LaTeX
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Argument 2
 status open
 
@@ -4555,9 +1510,24 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Description
+\begin_layout Standard
+
+\series bold
 \SpecialChar LaTeX
+
+\series default
   is a document markup language.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LaTeX
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4653,23 +1623,6 @@ No clean official documentation
 Several alternatives to do the same thing
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Itemize
-There are always package incompatibilities (and there always will be) between
- packages, all authors do their best, but as this is done as a hobby of
- all authors in their spare time ...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Description
 However; \SpecialChar LaTeX
@@ -4955,6 +1908,7 @@ Arabic Support
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 Thanks to the 
 \begin_inset Quotes eld
 \end_inset
@@ -5026,6 +1980,7 @@ Keep Concentrating
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 Due to its WYSIWYM nature, I feel 
 \bar under
 more
@@ -5038,6 +1993,8 @@ more
  as compared to 
 \series bold
 Ms-Word
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -5063,100 +2020,73 @@ Installing \SpecialChar LaTeX
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
 \begin_layout Itemize
-A Tex distribution usually includes \SpecialChar TeX
--related programs
+Install \SpecialChar LaTeX
+ implementation.
+ Notable implementations are:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-a Good IDE is usually included
-\end_layout
 
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-proText
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-proText
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.tug.org/protext/
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-
- is a \SpecialChar TeX
-/\SpecialChar LaTeX
- distribution for Windows.
- It includes:
-\end_layout
-
-\begin_deeper
-\begin_layout Description
+\series bold
 MiK\SpecialChar TeX
 
+\series default
+
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-MiKTex
+MiK\SpecialChar TeX
+
 \end_layout
 
 \end_inset
 
- \SpecialChar LaTeX
- Implementation for MS Windows
+ Windows only
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Download the full MiK\SpecialChar TeX
+.
+ This is done using the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+Net Installer
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ First, download the full MiK\SpecialChar TeX
+.
+ After download completes, run the downloaded installer and install the
+ full MiK\SpecialChar TeX
+.
 \end_layout
 
-\begin_layout Description
-TexStudio \SpecialChar TeX
-/\SpecialChar LaTeX
- IDE
-\end_layout
+\end_inset
 
-\begin_layout Description
-\SpecialChar ldots
 
 \end_layout
 
-\end_deeper
-\begin_layout Description
+\begin_layout Itemize
+
+\series bold
 \SpecialChar TeX
 
 \begin_inset space ~
 \end_inset
 
 Live
+\series default
+
 \begin_inset Index idx
 status open
 
@@ -5166,20 +2096,71 @@ Tex Live
 
 \end_inset
 
- is a cross platform
+ cross-platform
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fn:Available-for-MS-Windows,"
+
+\end_inset
+
 Available for MS-Windows, Mac OS and Linux
 \end_layout
 
 \end_inset
 
- \SpecialChar LaTeX
- implementation
+
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Install \SpecialChar TeX
+/\SpecialChar LaTeX
+ editor/IDE.
+ Notable examples include:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Texstudio
+\series default
+ cross-platform
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fn:Available-for-MS-Windows,"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Kile
+\series default
+ for Linux
+\end_layout
+
+\begin_layout Itemize
+\SpecialChar ldots
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -5227,17 +2208,6 @@ Hence, if you want to copy a \SpecialChar LaTeX
 \begin_layout Subsection
 \SpecialChar LyX
 
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-\SpecialChar LyX
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Frame
@@ -5255,10 +2225,22 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Description
+\begin_layout Standard
+\noindent
 \SpecialChar LyX
  is a graphical front-end to \SpecialChar LaTeX
- 
+.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+\SpecialChar LyX
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -5331,6 +2313,7 @@ Keep your concentration
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 Due to its WYSIWYM nature, I feel 
 \bar under
 very
@@ -5343,6 +2326,8 @@ very
  as compared to 
 \series bold
 Ms-Word
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -5368,8 +2353,9 @@ Arabic Support
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 Arabic is supported in \SpecialChar LyX
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -5448,16 +2434,6 @@ Thus is some English words in an Arabic line.
 \end_layout
 
 \begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
 \begin_inset Argument 4
 status open
 
@@ -5472,56 +2448,9 @@ Installing \SpecialChar LyX
 \end_layout
 
 \begin_deeper
-\begin_layout Description
-Linux packages are usually available in most Linux distributions' repositories
-\end_layout
-
-\begin_layout Description
-Windows installer is available at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-www.lyx.org/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-There are two installer variants
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Installer (recommended)
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-This needs a pre-installed \SpecialChar LaTeX
- distribution
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Bundle
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-It includes a minimal \SpecialChar LaTeX
- distribution
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-I recommend installing as follows:
+\noindent
+The following installation sequence is recommended:
 \end_layout
 
 \begin_layout Enumerate
@@ -5543,23 +2472,193 @@ PATH
 
 \end_deeper
 \begin_layout Enumerate
-Install MiK\SpecialChar TeX
+Install the 
+\series bold
+\emph on
+\bar under
+full
+\series default
+\emph default
+\bar default
+ MiK\SpecialChar TeX
  (or \SpecialChar TeX
  Live)
 \end_layout
 
 \begin_layout Enumerate
 Install \SpecialChar LyX
- (Installer option)
+
 \end_layout
 
-\begin_layout Description
-For both Linux & Windows installations, make sure to modify \SpecialChar LyX
- configurations
- to use Inkscape as svg graphic translator
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Configuring Converters
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\noindent
+SVG is the file format used by the Inkscape graphing SW.
+ Therefore, confirm that \SpecialChar LyX
+ uses Inkscape
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Make sure that the Inkscape is installed, and the path of 
+\begin_inset Quotes eld
+\end_inset
+
+inkscape.exe
+\begin_inset Quotes erd
+\end_inset
+
+ is added to 
+\begin_inset Quotes eld
+\end_inset
+
+path
+\begin_inset Quotes erd
+\end_inset
+
+ environment variable.
+ You can test this by executing 
+\begin_inset Quotes eld
+\end_inset
+
+inkscape
+\begin_inset Quotes erd
+\end_inset
+
+ from the command prompt.
+\end_layout
+
+\end_inset
+
+ to convert SVG files as follows:
+\end_layout
+
+\begin_layout Itemize
+Tools > Preferences > File Handling > Converters >
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that Inkscape CLI has changed since version 1.0 [
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://wiki.inkscape.org/wiki/index.php/Using_the_Command_Line
+\backslash
+#Changes_from_0.92
+\end_layout
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SVG -> EPS > Converter > inkscape $$i --export-area-drawing --export-type="eps"
+\end_layout
+
+\begin_layout Itemize
+SVG -> PDF > Converter > inkscape $$i --export-area-drawing --export-type="pdf"
+\end_layout
+
+\begin_layout Itemize
+SVG -> PNG > Converter > inkscape $$i --export-type="png"
+\end_layout
+
+\begin_layout Itemize
+GIF -> PNG > Converter > magick convert '$$i[0]' $$o
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For ImageMagick older than release 7.x, use 
+\begin_inset Quotes eld
+\end_inset
+
+convert '$$i[0]' $$o
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Converter File Cache
+\begin_inset Quotes erd
+\end_inset
+
+ > Enabled > Uncheck
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+You may do this only if your svg images are rendered very slowly in \SpecialChar LyX
+, and
+ their rendering consumes a lot of your PC resources.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \noindent
 \align center
@@ -5582,12 +2681,20 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
 	filename LyxInkscape.png
 	lyxscale 50
 	width 80line%
-	height 90theight%
+	height 80theight%
 	keepAspectRatio
 
 \end_inset
@@ -5596,6 +2703,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
 	filename LyxInkscape1.png
@@ -5626,6 +2741,7 @@ status open
 	lyxscale 50
 	width 80line%
 	height 30theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -5633,12 +2749,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
 	filename LyxInkscape.png
 	lyxscale 50
 	width 80line%
 	height 30theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -5646,12 +2764,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
 	filename LyxInkscape1.png
 	lyxscale 50
 	width 80line%
 	height 30theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -5663,8 +2783,6 @@ status open
 
 \end_layout
 
-\end_deeper
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -5688,16 +2806,30 @@ Learning \SpecialChar LyX
 \end_layout
 
 \begin_deeper
-\begin_layout Description
-Explore style-list, menus and toolbars
+\begin_layout Itemize
+
+\series bold
+Explore
+\series default
+ style-list, menus and toolbars.
 \end_layout
 
-\begin_layout Description
+\begin_layout Itemize
+
+\series bold
 Help
 \begin_inset space ~
 \end_inset
 
-menu includes very good manuals
+menu
+\series default
+ includes 
+\series bold
+\emph on
+very good
+\series default
+\emph default
+ manuals.
 \end_layout
 
 \begin_deeper
@@ -5718,33 +2850,40 @@ You may begin with:
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
+\begin_layout Itemize
 Introduction
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Tutorial
 \end_layout
 
-\begin_layout Standard
-Then if needed, read necessary sections of
-\end_layout
-
-\begin_layout Enumerate
-User's Guide
-\end_layout
-
-\begin_layout Enumerate
-rest of manuals \SpecialChar ldots
-
-\end_layout
-
 \end_deeper
 \end_deeper
-\begin_layout Description
-lyx
+\begin_layout Itemize
+
+\series bold
+C:
 \backslash
-examples folder contains wide variety of very good examples
+Program
+\begin_inset space ~
+\end_inset
+
+Files
+\begin_inset space ~
+\end_inset
+
+(x86)
+\backslash
+LyX
+\begin_inset space ~
+\end_inset
+
+2.3
+\backslash
+Resources
+\series default
+ folder contains wide variety of very good examples
 \end_layout
 
 \end_deeper
@@ -5792,52 +2931,9 @@ Hence, if you want to copy a \SpecialChar LyX
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Laboratory Work
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Practice the task explained in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:TestdriveLyX"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Presentations using Beamer
 \begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Beamer
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -5863,13 +2959,24 @@ Beamer
 \end_layout
 
 \begin_deeper
-\begin_layout Description
+\begin_layout Standard
+\noindent
 Beamer is a \SpecialChar LaTeX
  class for creating 
 \series bold
 professional
 \series default
- presentation slides
+ presentation slides.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Beamer
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -5877,19 +2984,6 @@ Beamer can also be easily used within \SpecialChar LyX
 
 \end_layout
 
-\begin_deeper
-\begin_layout Description
-Beamer
-\begin_inset space ~
-\end_inset
-
-template is a built in template \SpecialChar LyX
- provides to enable easily building presentation
-s in \SpecialChar LyX
-
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -5912,53 +3006,47 @@ Presentation Handouts
 \end_layout
 
 \begin_deeper
-\begin_layout Description
-Beamer-Article class is also available
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-It renders the slides on standard sized paper (like A4 or letter), with
- frame titles used as paragraph titles, no special slide layout/colors and
- keeps the sectioning.
+\noindent
+Beamer-Article is a \SpecialChar LaTeX
+ class that renders Beamer slides on a standard sized
+ paper
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\noindent
+like A4 or letter
 \end_layout
 
-\begin_layout Itemize
-It is suitable for creating 
+\end_inset
+
+ to create 
 \series bold
 \emph on
 professional
 \series default
 \emph default
- presentation handouts
+ presentation handouts.
 \end_layout
 
 \begin_layout Itemize
-You can have a single 
-\bar under
-source file
-\bar default
- for the slides and its handouts
+Frame titles are used as paragraph titles
 \end_layout
 
 \begin_layout Itemize
-You can still control the single source file so that the 
-\series bold
-slides
-\series default
- and the 
-\series bold
-article
-\series default
- are different
+Slide layout/colors are not rendered
 \end_layout
 
 \begin_layout Itemize
-Beamer-Article class is also available within \SpecialChar LyX
+Sectioning is kept
+\end_layout
+
+\begin_layout Itemize
+Beamer-Article can be easily used within \SpecialChar LyX
 
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -5982,6 +3070,7 @@ Keep your concentration
 
 \begin_deeper
 \begin_layout Standard
+\noindent
 Due to its WYSIWYM nature, I feel 
 \bar under
 very very very
@@ -6161,1604 +3250,6 @@ Also a very good variety of presentations are attached to this course
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Laboratory Work
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Practice the task explained in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:TestdriveBeamer"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-MS Word
-\end_layout
-
-\end_inset
-
-Microsoft Word
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Important Practices using Microsoft Word
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-In fact, MS word is too simple to give a traditional tutorial
-\end_layout
-
-\begin_layout Itemize
-Instead, I will stress on important practices using it
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Unfortunately, many MS-Word users are not aware about these practices
-\end_layout
-
-\begin_layout Itemize
-Hence, many MS-Word users do not use Word efficiently and waste considerable
- time trying to control it
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Numerous tutorials are also available
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Word for new users (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://office.microsoft.com/en-us/word-help/word-for-new-users-HA101631510.aspx
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Word 2013 (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.gcflearnfree.org/word2013
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-The Font
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename Font.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename FontAdditionalProperties.png
-	width 50line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status open
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-The Paragraph
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Paragraph
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Paragraph is a sequence of words ended by the line-end character 
-\begin_inset Quotes eld
-\end_inset
-
-¶
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Font.png
-	lyxscale 50
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ParagraphAdditionalProperties.png
-	lyxscale 50
-	width 45line%
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename ParagraphAdditionalProperties1.png
-	lyxscale 50
-	width 45line%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Note the 
-\begin_inset Quotes eld
-\end_inset
-
-Right-to-left
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-Left-to-right
-\begin_inset Quotes erd
-\end_inset
-
- radio buttons
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-They are equivalent to the 
-\begin_inset Graphics
-	filename ParagraphDirection.png
-
-\end_inset
-
- buttons
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Itemize
-, in addition to the 
-\begin_inset Quotes eld
-\end_inset
-
-Set As Default
-\begin_inset Quotes erd
-\end_inset
-
- button, affects the behavior or the entire document
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-The Style
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Style
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "49line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0pt
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-It is a collection of formattings for
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Font
-\end_layout
-
-\begin_layout Itemize
-Paragraph
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-MS Word already ships with a variety of built-in styles
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Most of them are 
-\series bold
-\emph on
-\bar under
-hidden
-\series default
-\emph default
-\bar default
- by default
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "49line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0pt
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename DefaultStyles.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "49line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0pt
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Notable styles include:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Normal
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-It is the parent of most styles
-\end_layout
-
-\begin_layout Itemize
-Changing its formattings affects many styles
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Heading 1, 2, \SpecialChar ldots
-, 9
-\end_layout
-
-\begin_layout Itemize
-Body Text First Indent
-\end_layout
-
-\begin_layout Itemize
-Title
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "45line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0pt
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename AllStyles.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-More information about styles can be found at
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Style basics in Word (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://office.microsoft.com/en-us/word-help/style-basics-in-word-HA102647012.aspx
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Always Minimize Formatting
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename MainMenueAndRuler.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Set the paragraph direction using either of the 
-\begin_inset Graphics
-	filename ParagraphDirection.png
-
-\end_inset
-
- buttons
-\end_layout
-
-\begin_layout Itemize
-Use styles whenever possible
-\end_layout
-
-\begin_layout Itemize
-Check hidden details of your document by using the 
-\begin_inset Graphics
-	filename ParagraphMark.png
-
-\end_inset
-
- button
-\end_layout
-
-\begin_layout Itemize
-Understand how you can use the ruler tools
-\end_layout
-
-\begin_layout Itemize
-Understand the 
-\begin_inset Quotes eld
-\end_inset
-
-Tab
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Tab
-\end_layout
-
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
- and how to set the Tab type
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-In Summary; Recommended Initial Preparations
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Page Setup
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-All margins = 
-\begin_inset Quotes eld
-\end_inset
-
-2.5 cm
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Gutter position = 
-\begin_inset Quotes eld
-\end_inset
-
-left
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-right
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Paper size = 
-\begin_inset Quotes eld
-\end_inset
-
-A4
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Section start = 
-\begin_inset Quotes eld
-\end_inset
-
-Continuous
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Section direction = 
-\begin_inset Quotes eld
-\end_inset
-
-Left-to-right
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-Right-to-left
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Apply to 
-\begin_inset Quotes eld
-\end_inset
-
-Whole document
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename Word_PageSetup_1.png
-	width 30line%
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename Word_PageSetup_2.png
-	width 30line%
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename Word_PageSetup_3.png
-	width 30line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Set the 
-\begin_inset Quotes eld
-\end_inset
-
-Style Pane Options
-\begin_inset Quotes erd
-\end_inset
-
- as shown
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Graphics
-	filename Word_StyleOptions.png
-	width 25line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Set 
-\begin_inset Quotes eld
-\end_inset
-
-Style Set
-\begin_inset Quotes erd
-\end_inset
-
- as shown
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Graphics
-	filename Word_StyleSet.png
-	width 50line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Set the 
-\begin_inset Quotes eld
-\end_inset
-
-Normal
-\begin_inset Quotes erd
-\end_inset
-
- style as follows
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Very important is the 
-\begin_inset Quotes eld
-\end_inset
-
-Right-to-left
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-Left-to-right
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename Word_NormalStyle_Font.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename Word_NormalStyle_Paragraph.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Templates
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Template
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Word default template is called 
-\begin_inset Quotes eld
-\end_inset
-
-Normal.dotm
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Normal.dotm
-\end_layout
-
-\end_inset
-
- and is located at 
-\begin_inset Quotes eld
-\end_inset
-
-%appdata%
-\backslash
-Microsoft
-\backslash
-Templates
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-It is recommended to modify it as explained earlier instead of repeating
- the same modifications for every new document
-\end_layout
-
-\begin_layout Itemize
-Be very careful when you modify it
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-If you corrupted the 
-\begin_inset Quotes eld
-\end_inset
-
-Normal.dotm
-\begin_inset Quotes erd
-\end_inset
-
- template,
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-you can reset it as follows:
-\end_layout
-
-\begin_layout Enumerate
-close MS word
-\end_layout
-
-\begin_layout Enumerate
-delete the corrupted 
-\begin_inset Quotes eld
-\end_inset
-
-%appdata%
-\backslash
-Microsoft
-\backslash
-Templates
-\backslash
-Normal.dotm
-\begin_inset Quotes erd
-\end_inset
-
- file
-\end_layout
-
-\begin_layout Enumerate
-launch MS_Word again
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-MS-Word creates a new virgin template when it cannot find it
-\end_layout
-
-\end_deeper
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Drawing
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-If your drawing contains 
-\emph on
-\bar under
-more than one
-\emph default
-\bar default
- drawing object, always collect your drawing objects in a 
-\begin_inset Quotes eld
-\end_inset
-
-Drawing Canvas
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename DrawingCanvas.png
-	width 25line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Cross-References
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Cross-Reference
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Always use cross-references to refer to any part of your document
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename ReferencesPage.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Section
-\begin_inset space ~
-\end_inset
-
-Breaks
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-breaks
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-They are used to divide the document into sections
-\end_layout
-
-\begin_layout Itemize
-Every section can have a different layout, for example:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{multicols}{2}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-page orientation
-\end_layout
-
-\begin_layout Itemize
-margins
-\end_layout
-
-\begin_layout Itemize
-number of columns
-\end_layout
-
-\begin_layout Itemize
-header/footer
-\end_layout
-
-\begin_layout Itemize
-\SpecialChar ldots
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{multicols}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-However, selecting a part of the document for printing becomes a bit more
- difficult
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename SectionBreaks.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Collaboration
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Use the review features when collaborating with others
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename ReviewPage.png
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Portability
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Portability
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-doc
-\backslash
-docx
-\series default
- files are not portable
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename CorruptedMatlabFigure.pdf
-	width 80line%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-pdf
-\series default
-
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-pdf is an acronym for Portable Document Format
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-pdf
-\end_layout
-
-\end_inset
-
- files however are portable
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Laboratory Work
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Practice the task explained in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:TestdriveMS-Word"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Itemize
-Basic tasks in PowerPoint 2010 (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://office.microsoft.com/en-us/powerpoint-help/basic-tasks-in-powerpoint-2010-H
-A101824346.aspx
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Enumerate
-Power point, impress
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Microsoft Office 2010
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Basic tasks in Excel 2010 (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://office.microsoft.com/en-us/excel-help/basic-tasks-in-excel-2010-HA101829993.
-aspx?CTT=5&origin=HA010370218
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Basic tasks in PowerPoint 2010 (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://office.microsoft.com/en-us/powerpoint-help/basic-tasks-in-powerpoint-2010-H
-A101824346.aspx
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Office Labs: Ribbon Hero 2 (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.microsoft.com/download/en/details.aspx?id=26531
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Office Labs: Search Commands (
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-www.microsoft.com/download/en/details.aspx?id=28559
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
 \end_inset
 
 
@@ -8869,6 +4360,7 @@ manual
 \begin_inset CommandInset citation
 LatexCommand cite
 key "inkscapeBook"
+literal "true"
 
 \end_inset
 
@@ -8940,444 +4432,6 @@ http://inkscapetutorials.org/
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Laboratory Work
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Practice the task explained in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:TestdriveInkscape"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Section
-Laboratory Work
-\end_layout
-
-\begin_layout Subsection
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:TestdriveLyX"
-
-\end_inset
-
-Technical Writing using \SpecialChar LyX
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-\SpecialChar LyX
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Laboratory 1: Technical Writing using \SpecialChar LyX
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Re-create the attached document using \SpecialChar LyX
-
-\end_layout
-
-\begin_layout Itemize
-This document is available at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://github.com/ahmed-rashed/Sample-LyX-Report
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:TestdriveBeamer"
-
-\end_inset
-
-Presenting using Beamer
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Beamer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Laboratory 2: Presenting using Beamer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Recreate the attached document
-\end_layout
-
-\begin_layout Itemize
-Create the presentation handouts
-\end_layout
-
-\begin_layout Itemize
-This document is available at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://github.com/ahmed-rashed/Sample-Beamer-Presentation-By-Lyx
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:TestdriveInkscape"
-
-\end_inset
-
-Vector Graphing using Inkscape
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Inkscape
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status open
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Laboratory 3: Vector Graphing using Inkscape
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Implement examples 1 and 2 of chapter 1 of 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "inkscapeBook"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Write the mathematical formula
-\begin_inset Formula 
-\[
-\sin(x)=\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)!}x^{2n+1}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Edit it
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Plot 
-\begin_inset Formula $20\log\left|\frac{\sin\left(\pi x\right)}{\pi x}\right|$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "49line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0bp
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename FunctionPlotter_sinc.png
-	lyxscale 50
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "49line%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0bp
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename FunctionPlotterCapabilities.png
-	lyxscale 50
-	width 100line%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-modify function curve points: merge/split points, make points corners, smooth,
- symmetric or auto-smooth
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Import a pdf document and edit it
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename BasicADSL_Router.svg
-	width 40line%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:TestdriveMS-Word"
-
-\end_inset
-
-Technical Writing using MS Word
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Word
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Flex PresentationMode
-status open
-
-\begin_layout FrameTitle
-Laboratory 4: Technical Writing using MS Word
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Re-create the attached document
-\end_layout
-
-\begin_layout Itemize
-This document is available at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://github.com/ahmed-rashed/Sample-Word-Report
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset Flex PresentationMode
 status open

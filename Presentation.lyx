@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -16,6 +16,16 @@
 \usecolortheme{sidebartab}
 \usecolortheme{rose}
 \setbeamertemplate{blocks}[rounded]
+
+%To enforce the [frame] option of footnotes
+\let\oldfootnote\footnote
+\renewcommand\footnote[1][]{\oldfootnote[frame,#1]}
+
+%To use symbols for footnotes
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%Reset footnote numbering every page
+\counterwithin*{footnote}{page}
+
 
 \allowdisplaybreaks
 \end_preamble
@@ -39,6 +49,8 @@ multicol
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 1
@@ -78,6 +90,7 @@ multicol
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \notefontcolor #0000ff
 \branch ProblemsAnswers
 \selected 0
@@ -106,7 +119,10 @@ multicol
 \tocdepth 4
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
