@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -106,6 +106,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -145,6 +147,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \notefontcolor #0000ff
 \branch ProblemsAnswers
 \selected 0
@@ -178,7 +181,10 @@
 \tocdepth 4
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle empty
@@ -199,7 +205,147 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace vfill*
+\noindent
+
+\series bold
+\size large
+Creative Commons License
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90bp"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename by-nc-sa.svg
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 3mm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "300bp"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+You may distribute, copy and create derivative works freely, so long as
+ you (i) credit the author, (ii) do not do so for money and (iii) share
+ alike, using the same license as this one.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+This work is licensed under the Attribution-NonCommercial-ShareAlike 4.0
+ International (CC BY-NC-SA 4.0), 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm*
 \end_inset
 
 
@@ -214,35 +360,46 @@ Proudly created by
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \noindent
-Except for the figures created by Matlab
-\begin_inset Foot
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-For your information, NumPy + SciPi + Matplotlib + Spyder offer very competitive
- alternative to Matlab.
- For Windows, all these packages and more are distributed by 
-\emph on
-Python(x,y)
-\emph default
-.
+
+
+\backslash
+indent 
 \end_layout
 
 \end_inset
 
-, this thesis has been created by 
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "90col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\noindent
+Except for the figures created by Matlab, this document has been created
+ by 
 \emph on
-open source software
+Free and open source software
 \emph default
- (OSS) packages.
+ (FOSS).
  Special thanks go to the numerous generous developers behind the following
  projects:
 \end_layout
@@ -288,8 +445,9 @@ Beamer \SpecialChar LaTeX
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch Arabic
+inverted 0
 status open
 
 \begin_layout Standard
@@ -336,48 +494,6 @@ Other great projects I failed to mention \SpecialChar ldots
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\series bold
-\size large
-Other software packages
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-Other software packages that greatly helped me during this research include:
-\end_layout
-
-\begin_layout Description
-Areca cross-platform incremental backup package
-\end_layout
-
-\begin_layout Description
-pdfcrop a tool for removing white margins of a pdf file; indispensable for
- exported Matlab figures
-\end_layout
-
-\begin_layout Description
-GoldenDict cross-platform feature-rich dictionary lookup program
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
 \end_inset
 
 

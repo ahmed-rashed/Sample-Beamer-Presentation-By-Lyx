@@ -354,13 +354,6 @@ hskip1pt%
 
 \begin_layout Plain Layout
 
-%    
-\backslash
-insertslidenavigationsymbol
-\end_layout
-
-\begin_layout Plain Layout
-
     
 \backslash
 insertframenavigationsymbol
@@ -368,30 +361,9 @@ insertframenavigationsymbol
 
 \begin_layout Plain Layout
 
-%    
-\backslash
-insertsubsectionnavigationsymbol
-\end_layout
-
-\begin_layout Plain Layout
-
-%    
-\backslash
-insertsectionnavigationsymbol
-\end_layout
-
-\begin_layout Plain Layout
-
-%    
-\backslash
-insertdocnavigationsymbol
-\end_layout
-
-\begin_layout Plain Layout
-
     
 \backslash
-insertbackfindforwardnavigationsymbol
+insertsectionnavigationsymbol
 \end_layout
 
 \begin_layout Plain Layout
@@ -457,97 +429,6 @@ vskip3pt%
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{math text}{family=
-\backslash
-rmfamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamercolor{math text}{fg=red}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{title}{series=
-\backslash
-normalfont,size=
-\backslash
-LARGE}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{title in sidebar}{series=
-\backslash
-bfseries}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{author in sidebar}{series=
-\backslash
-bfseries}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont*{item}{series=}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{frametitle}{size=}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{block title}{size=
-\backslash
-small}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-setbeamerfont{subtitle}{size=
-\backslash
-normalsize,series=
-\backslash
-normalfont}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 setbeamertemplate{section in toc}[ball unnumbered]
@@ -560,11 +441,68 @@ setbeamertemplate{section in toc}[ball unnumbered]
 setbeamertemplate{subsection in toc}[square]
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
 \begin_layout Plain Layout
 
 
 \backslash
-setbeamertemplate{theorems}[numbered]
+setbeamertemplate{frame end}{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+marginpar{
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+scriptsize
+\backslash
+hbox to 1cm{
+\backslash
+hfill
+\backslash
+strut
+\backslash
+insertframenumber}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+hrule height .2pt
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -802,70 +740,6 @@ sectionstyle=show/shaded/hide/hide]
 
 \backslash
 end{frame}
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ArticleMode
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-setbeamertemplate{frame end}{
-\end_layout
-
-\begin_layout Plain Layout
-
-    
-\backslash
-marginpar{
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-scriptsize
-\backslash
-hbox to 1cm{
-\backslash
-hfill
-\backslash
-strut
-\backslash
-insertframenumber}
-\end_layout
-
-\begin_layout Plain Layout
-
-        
-\backslash
-hrule height .2pt
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
 \end_layout
 
 \begin_layout Plain Layout
@@ -4138,15 +4012,6 @@ Interesting Plug-ins
 status open
 
 \begin_layout Plain Layout
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Function plotter
-\end_layout
-
-\end_inset
-
 Function Plotter
 \end_layout
 
@@ -4156,29 +4021,8 @@ Function Plotter
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-It is a built in plugins
-\end_layout
-
-\begin_layout Itemize
-It uses brazier curves, same as Inkscape
-\end_layout
-
-\begin_layout Itemize
-It calculates the function derivative and use it to adjust the curve slope
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-It produces very smooth curves using much less points than Matlab
-\end_layout
-
-\begin_layout Itemize
-You can still adjust/correct the curve manually
-\end_layout
-
-\end_deeper
 \begin_layout Standard
+\noindent
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -4198,17 +4042,42 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset VSpace 0bp
-\end_inset
+\noindent
+\begin_inset Index idx
+status open
 
-
+\begin_layout Plain Layout
+Function plotter
 \end_layout
 
+\end_inset
+
+Function Plotter is a built in plugin.
+\end_layout
+
+\begin_layout Itemize
+It uses Bézier curves, same as Inkscape
+\end_layout
+
+\begin_layout Itemize
+It calculates the function derivative and use it to adjust the curve slope
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It produces very smooth curves using much less points than Matlab
+\end_layout
+
+\begin_layout Itemize
+You can still modify the end/control points
+\end_layout
+
+\end_deeper
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename FunctionPlotter_sinc.png
-	lyxscale 50
+	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/FunctionPlotterCapabilities.png
+	lyxscale 25
 	width 100line%
 
 \end_inset
@@ -4230,7 +4099,7 @@ has_inner_box 1
 inner_pos "t"
 use_parbox 0
 use_makebox 0
-width "49line%"
+width "45line%"
 special "none"
 height "1in"
 height_special "totalheight"
@@ -4249,9 +4118,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
-	filename FunctionPlotterCapabilities.png
+	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/FunctionPlotter_sinc.png
 	lyxscale 50
 	width 100line%
 
