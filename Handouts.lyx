@@ -4076,7 +4076,7 @@ You can still modify the end/control points
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/FunctionPlotterCapabilities.png
+	filename FunctionPlotterCapabilities.png
 	lyxscale 25
 	width 100line%
 
@@ -4121,7 +4121,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename /home/Documents/MyWork/Courses/ComputerApplications/Lectures/FunctionPlotter_sinc.png
+	filename FunctionPlotter_sinc.png
 	lyxscale 50
 	width 100line%
 
