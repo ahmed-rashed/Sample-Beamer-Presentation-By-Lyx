@@ -9,6 +9,8 @@
 \usepackage{calc}
 \usepackage{datetime}
 \usepackage{pdflscape}
+\usepackage{multimedia}
+\usepackage{animate}
 
 \usetheme[hideothersubsections]{Goettingen}
 
@@ -798,7 +800,7 @@ Faculty of Engineering, Cairo University
 \begin_layout TitleGraphic
 \noindent
 \begin_inset Graphics
-	filename AerospaceDeptLogo.jpg
+	filename ../../AerospaceDeptLogo.jpg
 	width 50text%
 
 \end_inset
@@ -850,7 +852,7 @@ begin{titlepage}
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename AerospaceDeptLogo.jpg
+	filename ../../AerospaceDeptLogo.jpg
 	height 3cm
 
 \end_inset
@@ -861,7 +863,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename FE-Logo.jpg
+	filename ../../FE-Logo.jpg
 	height 3cm
 
 \end_inset
@@ -872,7 +874,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename CU-Logo.jpg
+	filename ../../CU-Logo.jpg
 	height 3cm
 
 \end_inset
@@ -2806,17 +2808,7 @@ Hence, if you want to copy a \SpecialChar LyX
 \end_layout
 
 \begin_layout Subsection
-Presentations using Beamer
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
 Beamer
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Frame
@@ -2856,6 +2848,150 @@ Beamer
 \begin_layout Itemize
 Beamer can also be easily used within \SpecialChar LyX
 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Including Videos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+Use the 
+\family typewriter
+multimedia
+\family default
+ package.
+ For example, the following animation is produced using:
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+movie[externalviewer]{
+\backslash
+includegraphics[width=0.7
+\backslash
+textheight]{movieThumbnail.png}}{movie1.mp4}
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+movie[externalviewer]{
+\backslash
+includegraphics[width=0.7
+\backslash
+textheight]{movieThumbnail.png}}{movie1.mp4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Including Gif Animations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Flex PresentationMode
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+animategraphics[controls,autoplay,loop,width=0.5
+\backslash
+linewidth]{1}{CAD_Modeling}{}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Refer to 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://tex.stackexchange.com/questions/240243/getting-gif-and-or-moving-images-in
+to-a-latex-presentation
+\end_layout
+
+\end_inset
+
+ for details
 \end_layout
 
 \end_deeper

@@ -10,6 +10,8 @@
 \usepackage{datetime}
 \usepackage{pdflscape}
 \usepackage{chngcntr}
+\usepackage{multimedia}
+\usepackage{animate}
 
 \usetheme[hideothersubsections]{Goettingen}
 
