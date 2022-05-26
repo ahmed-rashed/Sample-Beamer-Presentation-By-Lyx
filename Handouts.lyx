@@ -19,6 +19,8 @@
 \setbeamertemplate{blocks}[rounded]
 
 \allowdisplaybreaks
+
+\let\makebeamertitle\relax
 \end_preamble
 \options intoc
 \use_default_options true
@@ -1320,8 +1322,7 @@ status open
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename LaTeX_Vs_Word.jpg
-	lyxscale 25
+	filename Latex_vs_Word1.png
 	width 60line%
 	height 80theight%
 	keepAspectRatio
