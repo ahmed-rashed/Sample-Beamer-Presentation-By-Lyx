@@ -28,7 +28,7 @@
 %Reset footnote numbering every page
 \counterwithin*{footnote}{page}
 
-
+\usefonttheme[onlymath]{serif}
 \allowdisplaybreaks
 \end_preamble
 \options intoc

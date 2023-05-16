@@ -20,6 +20,29 @@
 
 \allowdisplaybreaks
 
+\newcommand*{\blankpage}{%
+  \begin{otherlanguage}{english}
+    \vspace*{\fill}
+%    \hfill
+    \begin{center}
+      \emph{This page is intentionally left blank!}
+    \end{center}
+    \vspace{\fill}
+%    \thispagestyle{empty}
+  \end{otherlanguage}
+  \clearpage
+}
+
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage%
+    \if@twoside
+        \ifodd\c@page\else
+        \blankpage
+        \fi
+    \fi
+}
+\makeatother
+
 \let\makebeamertitle\relax
 \end_preamble
 \options intoc
@@ -802,7 +825,7 @@ Faculty of Engineering, Cairo University
 \begin_layout TitleGraphic
 \noindent
 \begin_inset Graphics
-	filename ../../AerospaceDeptLogo.jpg
+	filename AerospaceDeptLogo.jpg
 	width 50text%
 
 \end_inset
@@ -854,7 +877,7 @@ begin{titlepage}
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../AerospaceDeptLogo.jpg
+	filename AerospaceDeptLogo.jpg
 	height 3cm
 
 \end_inset
@@ -865,7 +888,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename ../../FE-Logo.jpg
+	filename FE-Logo.jpg
 	height 3cm
 
 \end_inset
@@ -876,7 +899,7 @@ begin{titlepage}
 
 
 \begin_inset Graphics
-	filename ../../CU-Logo.jpg
+	filename CU-Logo.jpg
 	height 3cm
 
 \end_inset
